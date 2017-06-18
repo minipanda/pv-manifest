@@ -21,7 +21,7 @@
 
   <project name="pantavisor" remote="gitlab" path="internal/init"/>
   <project name="libthttp" remote="gitlab" path="internal/libthttp"/>
-  <project name="lxc" remote="gitlab" path="external/lxc"/>
+  <project name="lxc" remote="gitlab" path="external/lxc" revision="stable-2.0"/>
   <project name="busybox" remote="gitlab" path="external/busybox"/>
   <project name="qemu" remote="gitlab" path="external/qemu"/>
   <project name="e2fsprogs" remote="gitlab" path="external/e2fsprogs"/>
@@ -30,10 +30,10 @@
   <!-- MALTA -->
   <project name="pv-uboot-malta" remote="gitlab" clone-depth="10" path="bootloader/malta"/>
   <project name="pv-config-malta" remote="gitlab" clone-depth="10" path="config/malta"/>
-  <!--<project name="pv-kernel-malta" remote="gitlab" clone-depth="10" path="kernel/malta"/>-->
+  <project name="pv-kernel-malta" remote="gitlab" clone-depth="10" path="kernel/malta"/>
 
   <!-- RPI -->
-  <project name="linux" remote="raspberrypi" clone-depth="10" path="kernel/rpi3" revision="rpi-4.4.y"/> 
+  <project name="linux" remote="raspberrypi" clone-depth="10" path="kernel/rpi3" revision="rpi-4.4.y"/>
   <project name="pv-uboot-rpi" remote="gitlab" clone-depth="10" path="bootloader/rpi3"/>
   <project name="pv-vendor-rpi3" remote="gitlab" path="vendor/rpi3"/>
   <project name="pv-vendor-rpi2" remote="gitlab" path="vendor/rpi2"/>
