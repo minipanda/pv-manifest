@@ -33,7 +33,7 @@
   <project name="pv-kernel-malta" remote="gitlab" clone-depth="10" path="kernel/malta"/>
 
   <!-- RPI -->
-  <project name="linux" remote="raspberrypi" clone-depth="10" path="kernel/rpi3" revision="rpi-4.4.y"/>
+  <project name="linux" remote="raspberrypi" clone-depth="10" path="kernel/rpi3" revision="rpi-4.9.y"/>
   <project name="pv-uboot-rpi" remote="gitlab" clone-depth="10" path="bootloader/rpi3"/>
   <project name="pv-vendor-rpi3" remote="gitlab" path="vendor/rpi3"/>
   <project name="pv-vendor-rpi2" remote="gitlab" path="vendor/rpi2"/>
