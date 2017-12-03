@@ -13,6 +13,7 @@
 
   <project name="pv-scripts" remote="gitlab" path="scripts">
     <linkfile src="build.sh" dest="build.sh" />
+    <linkfile src="build.docker.sh" dest="build.docker.sh" />
     <linkfile src="README.md" dest="README.md" />
     <linkfile src=".dockerignore" dest=".dockerignore" />
   </project>
