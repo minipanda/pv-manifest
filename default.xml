@@ -40,4 +40,8 @@
   <project name="pv-vendor-rpi2" remote="gitlab" path="vendor/rpi2"/>
   <project name="pv-config-rpi3" remote="gitlab" clone-depth="10" path="config/rpi3"/>
   <project name="pv-config-rpi2" remote="gitlab" clone-depth="10" path="config/rpi2"/>
+
+  <!-- GENERIC TARGETS -->
+  <project name="pv-config-arm-generic" remote="gitlab" clone-depth="10" path="config/arm-generic"/>
+  <project name="pv-config-mips-generic" remote="gitlab" clone-depth="10" path="config/mips-generic"/>
 </manifest>
