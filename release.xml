@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://gitlab.com/pantacor/" name="gitlab"/>
+  <remote fetch="https://github.com/raspberrypi/" name="raspberrypi"/>
+  <remote fetch="git://git.denx.de/" name="uboot"/>
+  
+  <default remote="gitlab" revision="refs/heads/master"/>
+  
+  <project name="alchemy" revision="03f18ce711bdca6ec9d81e5f6fa9929b8b9a3de8" upstream="refs/heads/master"/>
+  <project name="busybox" path="external/busybox" revision="fb022791e310f5be36bce1ee1ef2c154f67aec72" upstream="refs/heads/master"/>
+  <project name="e2fsprogs" path="external/e2fsprogs" revision="841a2d7873dd6777f21f142e7826dfd5ad7c75a7" upstream="refs/heads/master"/>
+  <project name="libthttp" path="internal/libthttp" revision="6c2680476f3ebb9ef7efc4e2e7935feb77f549de" upstream="refs/heads/master"/>
+  <project clone-depth="10" name="linux" path="kernel/rpi3" remote="raspberrypi" revision="ffd7bf4085b09447e5db96edd74e524f118ca3fe" upstream="rpi-4.9.y"/>
+  <project name="lxc" path="external/lxc" revision="8093baa415b356b1977027048f4ec00d7d21052e" upstream="stable-2.0"/>
+  <project name="mtools" path="external/mtools" revision="adece7a6366ea08a7abd5a620fb87de8ca18a770" upstream="refs/heads/master"/>
+  <project name="pantavisor" path="internal/init" revision="1e7d60d942d409b04a77a774cdfd63789615c565" upstream="refs/heads/master"/>
+  <project clone-depth="10" name="pv-config-arm-generic" path="config/arm-generic" revision="0a3344adf35baa59ffe30de2fee16885312d165f" upstream="refs/heads/master"/>
+  <project clone-depth="10" name="pv-config-malta" path="config/malta" revision="b3d08c899e6fcb107547c7bbeac79a114f30fef1" upstream="refs/heads/master"/>
+  <project clone-depth="10" name="pv-config-mips-generic" path="config/mips-generic" revision="0d4771459009dc36f625ed55078db5949c70ea3c" upstream="refs/heads/master"/>
+  <project clone-depth="10" name="pv-config-rpi2" path="config/rpi2" revision="ad08a65e0eff114fc811c5581278a1514e09f9fb" upstream="refs/heads/master"/>
+  <project clone-depth="10" name="pv-config-rpi3" path="config/rpi3" revision="956692fa3e43867bff4e5d7a7c86a39995918d65" upstream="refs/heads/master"/>
+  <project clone-depth="10" name="pv-kernel-malta" path="kernel/malta" revision="4936a5bdf03dca92118433e724a9fdd8f63e21e1" upstream="refs/heads/master"/>
+  <project name="pv-pvrfactory" path="external/trail" revision="a5516f6870e24e350d2b2d60036224f5ca6f255d" upstream="refs/heads/master"/>
+  <project name="pv-scripts" path="scripts" revision="72397ff72c534ab2096cd31efb1e80e352c1f587" upstream="refs/heads/master">
+    <linkfile dest="build.sh" src="build.sh"/>
+    <linkfile dest="build.docker.sh" src="build.docker.sh"/>
+    <linkfile dest="README.md" src="README.md"/>
+    <linkfile dest=".dockerignore" src=".dockerignore"/>
+  </project>
+  <project name="pv-toolchains" path="toolchains" revision="3038e54a1be7753e6a785d16378e9f3aed03b8b5" upstream="refs/heads/master"/>
+  <project clone-depth="10" name="pv-uboot-malta" path="bootloader/malta" revision="44765c44d1e19299efdd052e14c3c8e52bf33a23" upstream="refs/heads/master"/>
+  <project clone-depth="10" name="pv-uboot-rpi" path="bootloader/rpi3" revision="42be22dda2dd8c76c671861f4a0224afc8b40710" upstream="refs/heads/master"/>
+  <project name="pv-vendor-rpi2" path="vendor/rpi2" revision="de34216721da574780d658fd25e8c8a0c41f8181" upstream="refs/heads/master"/>
+  <project name="pv-vendor-rpi3" path="vendor/rpi3" revision="51002c24bad741a5bf1f743a7f8f53ff0e62166b" upstream="refs/heads/master"/>
+  <project name="qemu" path="external/qemu" revision="20b5c6b26d122de691e124b8a89368d392d275dd" upstream="refs/heads/master"/>
+</manifest>
