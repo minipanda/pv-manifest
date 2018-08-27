@@ -2,6 +2,8 @@
 <manifest>
   <remote  name="gitlab"
            fetch="https://gitlab.com/pantacor/" />
+  <remote  name="github"
+           fetch="https://github.com/pantacor/" />
   <remote  name="uboot"
            fetch="git://git.denx.de/" />
   <remote  name="raspberrypi"
@@ -17,7 +19,7 @@
     <linkfile src="README.md" dest="README.md" />
     <linkfile src=".dockerignore" dest=".dockerignore" />
   </project>
-  <project name="pv-toolchains" remote="gitlab" path="toolchains"/>
+  <project name="pv-toolchains" remote="github" path="toolchains"/>
   <project name="pv-pvrfactory" remote="gitlab" path="external/trail"/>
 
   <project name="pantavisor" remote="gitlab" path="internal/init"/>
