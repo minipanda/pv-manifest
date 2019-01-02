@@ -8,6 +8,8 @@
            fetch="git://git.denx.de/" />
   <remote  name="raspberrypi"
            fetch="https://github.com/raspberrypi/" />
+  <remote  name="kernel"
+           fetch="git://git.kernel.org/pub/scm/linux/kernel/git/stable/" />
 
   <default revision="refs/heads/master" remote="gitlab" />
 
@@ -29,6 +31,7 @@
   <project name="qemu" remote="gitlab" path="external/qemu"/>
   <project name="e2fsprogs" remote="gitlab" path="external/e2fsprogs"/>
   <project name="mtools" remote="gitlab" path="external/mtools"/>
+  <project name="linux" remote="kernel" path="kernel/linux-stable" clone-depth="10" revision="refs/tags/v4.14.12"/>
 
   <!-- MALTA -->
   <project name="pv-uboot-malta" remote="gitlab" clone-depth="10" path="bootloader/malta"/>
