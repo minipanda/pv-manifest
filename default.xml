@@ -46,6 +46,10 @@
   <project name="pv-config-rpi3" remote="gitlab" clone-depth="10" path="config/rpi3"/>
   <project name="pv-config-rpi2" remote="gitlab" clone-depth="10" path="config/rpi2"/>
 
+  <!-- x64 UEFI -->
+  <project name="pv-vendor-x64-uefi" remote="gitlab" path="vendor/x64-uefi"/>
+  <project name="pv-config-x64-uefi" remote="gitlab" clone-depth="10" path="config/x64-uefi"/>
+
   <!-- GENERIC TARGETS -->
   <project name="pv-config-arm-generic" remote="gitlab" clone-depth="10" path="config/arm-generic"/>
   <project name="pv-config-mips-generic" remote="gitlab" clone-depth="10" path="config/mips-generic"/>
