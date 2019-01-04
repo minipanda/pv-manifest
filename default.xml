@@ -10,7 +10,8 @@
            fetch="https://github.com/raspberrypi/" />
   <remote  name="kernel"
            fetch="git://git.kernel.org/pub/scm/linux/kernel/git/stable/" />
-
+  <remote  name="pv-bubblegum"
+           fetch="https://github.com/minipanda/" />
   <default revision="refs/heads/master" remote="gitlab" />
 
   <project name="alchemy" remote="gitlab" path="alchemy"/>
@@ -49,6 +50,12 @@
   <!-- x64 UEFI -->
   <project name="pv-vendor-x64-uefi" remote="gitlab" path="vendor/x64-uefi"/>
   <project name="pv-config-x64-uefi" remote="gitlab" clone-depth="10" path="config/x64-uefi"/>
+
+  <!-- Bubblegum -->
+  <project name="96boards-bubblegum-linux" remote="pv-bubblegum" path="kernel/bubblegum" revision="bubblegum96-3.10"/>
+  <project name="96boards-bubblegum-u-boot" remote="pv-bubblegum" path="bootloader/bubblegum" revision="bubblegum96-2015.07"/>
+  <project name="pv-vendor-bubblegum" remote="pv-bubblegum" path="vendor/bubblegum"/>
+  <project name="pv-config-bubblegum" remote="pv-bubblegum" path="config/bubblegum"/>
 
   <!-- GENERIC TARGETS -->
   <project name="pv-config-arm-generic" remote="gitlab" clone-depth="10" path="config/arm-generic"/>
